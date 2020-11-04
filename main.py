@@ -43,9 +43,9 @@ else:
 
   #function
 
-def chat(name1,name2):
+def chat(name1,name2,age):
   print("%s: 안녕? 넌 몇 살이니?" % name1)
-  print("%s: 나? ;나는 20" % name2)
+  print("%s: 나?;;; 나는 %d" % (name2, age))
 
 
-chat("알렉스","영희")
+chat("알렉스","영희" ,20)
