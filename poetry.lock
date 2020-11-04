@@ -1,0 +1,41 @@
+[[package]]
+category = "main"
+description = "The geodesic routines from GeographicLib"
+name = "geographiclib"
+optional = false
+python-versions = "*"
+version = "1.50"
+
+[[package]]
+category = "main"
+description = "Python Geocoding Toolbox"
+name = "geopy"
+optional = false
+python-versions = ">=3.5"
+version = "2.0.0"
+
+[package.dependencies]
+geographiclib = ">=1.49,<2"
+
+[package.extras]
+aiohttp = ["aiohttp"]
+dev = ["async-generator", "flake8 (>=3.6.0,<3.7.0)", "isort (>=4.3.4,<4.4.0)", "coverage", "pytest-aiohttp", "pytest (>=3.10)", "readme-renderer", "sphinx", "sphinx-rtd-theme (>=0.4.0)"]
+dev-docs = ["readme-renderer", "sphinx", "sphinx-rtd-theme (>=0.4.0)"]
+dev-lint = ["async-generator", "flake8 (>=3.6.0,<3.7.0)", "isort (>=4.3.4,<4.4.0)"]
+dev-test = ["async-generator", "coverage", "pytest-aiohttp", "pytest (>=3.10)"]
+requests = ["urllib3 (>=1.24.2)", "requests (>=2.16.2)"]
+timezone = ["pytz"]
+
+[metadata]
+content-hash = "ed77f6ebb0308218692b9b4432728c57698fc5b0dc8a48700fb8bd8ac4a871ea"
+python-versions = "^3.8"
+
+[metadata.files]
+geographiclib = [
+    {file = "geographiclib-1.50-py3-none-any.whl", hash = "sha256:51cfa698e7183792bce27d8fb63ac8e83689cd8170a730bf35e1a5c5bf8849b9"},
+    {file = "geographiclib-1.50.tar.gz", hash = "sha256:12bd46ee7ec25b291ea139b17aa991e7ef373e21abd053949b75c0e9ca55c632"},
+]
+geopy = [
+    {file = "geopy-2.0.0-py3-none-any.whl", hash = "sha256:fdc596bab67d9f4828f43bf9e97c4e0a1d1518b7c2357485cef0e1c3cf470220"},
+    {file = "geopy-2.0.0.tar.gz", hash = "sha256:b88e189f0d2e0051da45b6311d5b2ced59afaf1378eb27ebb57eaf37c166a03b"},
+]

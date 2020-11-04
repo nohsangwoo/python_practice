@@ -1,3 +1,5 @@
+
+
 x="노상우는"
 y=1989
 z= "년에 태어났다"
@@ -339,6 +341,47 @@ jenny.arrest("케이코")
 
 michael.introduce()
 michael.program("업그레이드된 매직미러 앱")
-  
-  # https://www.youtube.com/watch?v=M6kQTpIqpLs
-  # 1시간 까지 봤음
+
+
+print("-------------------------------------------------------------------------")
+# 모듈 OR 패키지 사용법
+# animal package
+# dog, cat modules
+# dog, cat modules can say "hi"
+
+print("모듈 OR 패키지 사용법")
+
+from animal import dog # animal 패키지에서 dog라는 모듈을 갖고와줘
+from animal import cat # animal 패키지에서 cat라는 모듈을 갖고와줘
+
+
+d = dog.Dog() # instance
+d.hi()
+
+c = cat.Cat() # instance
+c.hi()
+
+
+from animal import * # animal 패키지가 갖고 있는 모듈을 다 불러와!
+d = Dog()
+c = Cat()
+
+d.hi()
+c.hi()
+
+
+print("-------------------------------------------------------------------------")
+
+from geopy.geocoders import Nominatim
+geolocator = Nominatim(user_agent="sangwoo")
+location = geolocator.geocode("Seoul, South Korea")
+# 주소
+print(location.address)
+# 위도, 경도
+print((location.latitude, location.longitude))
+# location의 날것의 그대로를 다 가져와 달라
+print(location.raw)
+
+
+# https://www.youtube.com/watch?v=M6kQTpIqpLs
+# 1시간 까지 봤음
