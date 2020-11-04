@@ -83,15 +83,27 @@ sayHello("상우",8)
 #for, while 사용법
 
 # 1. for
-for i in range(3):
+for i in range(1):
   print(i)
   print("철수: 안녕 영희야 뭐해?")
   print("영희: 오빠 죄송한데 말걸지 말아주시겠어요? 차단할께요")
 
 # 2. while
-i=0
+i=3
 while i<3:
   print(i)
   print("철수: 안녕 영희야 뭐해?")
   print("영희: 오빠 죄송한데 말걸지 말아주시겠어요? 차단할께요")
   i+=1
+
+
+
+# break, continue
+i=3
+while True:
+  print(i)
+  print("철수: 안녕 영희야 뭐해?")
+  print("영희: 오빠 죄송한데 말걸지 말아주시겠어요? 차단할께요")
+  i+=1
+  if i >2:
+    break
