@@ -49,3 +49,11 @@ def chat(name1,name2,age):
 
 
 chat("알렉스","영희" ,20)
+
+#---------------------------------------------------------
+
+def dsum(a,b):
+  result = a+b
+  return result
+
+print(dsum(10,20))
