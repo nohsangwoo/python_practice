@@ -17,3 +17,12 @@ if 2>1:
 
 if not 1>2:
   print("작동?")
+
+
+# 조건이 전부True면 실행
+if 1>0 and 2>1:
+  print("and 사용법")
+
+# 조건중 하나만 True라도 실행
+if(1<0 or 2>1):
+  print("or 사용법")
