@@ -195,3 +195,20 @@ print("ty" in y)
 if "hello" in y:
   print("hello가 있어요")
 
+
+print("-------------------------------------------------------------------------")
+print("Tuple 사용법")
+# 튜플은 한번 설정해두면 바꿀수 없음 (mutable(가변) vs immutable(불변))
+
+# Tuple
+x=(1,2,3)
+y=('a','b','c')
+z=(1,"hello","three")
+
+print(x+ y)
+print("a" in y)
+print(z.index(1))
+print(x[0])
+
+# 튜플은 업데이트 불가능
+# x[0]=10 이런식으로 업데이트가 불가능
