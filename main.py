@@ -288,4 +288,57 @@ for fruit in fruits:
   
 print(d)
 
+
+print("-------------------------------------------------------------------------")
+# 클래스 사요애법
+print("class 사용법")
+
+
+class Person:
+
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
   
+  def say_hello(self, to_name ):
+    print("안녕! " + to_name +  " 나는 " +  self.name)
+
+  def introduce(self):
+    print("내 이름은 " + self.name + "그리고 나는 " + str(self.age) + " 살이야" )
+
+sangwoo = Person("sangwoo",33)
+jongran = Person("jongran",59)
+
+
+sangwoo.introduce()
+sangwoo.say_hello("철수")
+
+jongran.introduce()
+jongran.say_hello("영희")
+
+
+print("-------------------------------------------------------------------------")
+# 상속 inheritance
+print("상속 inheritance 사용법")
+
+
+class Police(Person):
+  def arrest(self, to_arrest):
+    print("넌 체포됐다, " + to_arrest)
+
+class Programmer(Person):
+  def program(self, to_program):
+    print("이번에 만들 프로그램은" + to_program)
+
+
+jenny = Police("제니",20)
+michael = Programmer("마이클",20)
+
+jenny.introduce()
+jenny.arrest("케이코")
+
+michael.introduce()
+michael.program("업그레이드된 매직미러 앱")
+  
+  # https://www.youtube.com/watch?v=M6kQTpIqpLs
+  # 1시간 까지 봤음
